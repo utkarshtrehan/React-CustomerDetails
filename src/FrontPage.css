@@ -1,0 +1,51 @@
+.main {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    flex-direction: column;
+}
+table {
+    max-width: 70%;
+}
+.table-heading > th {
+    background-color: #2d2d2d;
+    padding: 0.5em;
+    color: white;
+}
+td {
+    padding: 0.5em;
+}
+tr:nth-child(even) {background: #c9dcff}
+tr:nth-child(odd) {background: #FFF}
+
+button {
+    border: none;
+    padding: 5px 10px;
+    border-radius: 3px;
+    color: white;
+    cursor: pointer;
+}
+
+.edit {
+    background: rgb(89, 89, 255);
+}
+.delete {
+    background: rgb(255, 65, 65);
+}
+.save {
+    background: rgb(30, 107, 30);
+}
+
+.message {
+    background-color: rgb(223, 223, 223);
+    width: fit-content;
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+@media only screen and (max-width: 600px) {
+    table {
+        max-width: none;
+    }
+}
